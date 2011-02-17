@@ -111,8 +111,6 @@ OFFSET   {7}";
             [ModelBinder(typeof(ReturnJson.GeneralPurposeCode.PropertyBinder))] 
             ComboBoxInitializer i)
         {
-            string filename = @"UTF8Encoding=True; Data Source=" + System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.sqlite");
-
 
 
             using (var cx = Connection)
