@@ -15,6 +15,10 @@ This code just provided a basic scaffolding for common lookups, but on real-worl
 </p>
 
 
+<br />
+Original Source: <a href="http://plugins.jquery.com/project/ajaxComboBox">http://plugins.jquery.com/project/ajaxComboBox</a>
+
+
 <br /><br />
 <p>
 <a href="http://twitter.com/jacksonh/status/12925365437599745">"Keep your friends close and your friends that can help you debug regexs even closer."</a>
