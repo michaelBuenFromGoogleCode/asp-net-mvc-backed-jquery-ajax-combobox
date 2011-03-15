@@ -15,7 +15,7 @@ namespace ReturnJson.Models
 
     public class ComboBoxParameter
     {
-
+        
         [BindingName("db_table")] public string DbTable { get; set; }
 
         [BindingName("q_word")] public string QueryWord { get; set; }
@@ -24,11 +24,11 @@ namespace ReturnJson.Models
 
         string _showFieldRaw = "";
         [BindingName("show_field")]
-        public string ShowFieldRaw { set { _showFieldRaw = value; ShowFields = _showFieldRaw.Split(','); }  }
+        public string ShowFieldRaw { set { _showFieldRaw = value; ShowFields = _showFieldRaw.Split(','); } get { return _showFieldRaw; } }
 
         string _hideFieldRaw = "";
         [BindingName("hide_field")]
-        public string HideFieldRaw { set { _hideFieldRaw = value; HideFields = _hideFieldRaw.Split(','); } }
+        public string HideFieldRaw { set { _hideFieldRaw = value; HideFields = _hideFieldRaw.Split(','); } get { return _hideFieldRaw; } }
 
         [BindingName("primary_key")] public string PrimaryKey { get; set; }
 
