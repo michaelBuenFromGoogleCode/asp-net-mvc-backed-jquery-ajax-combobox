@@ -94,7 +94,7 @@ OFFSET   {7}";
                                 dca.Where(b => 
                                     b.ColumnName != p.Field
                                     && !p.HideFields.Contains(b.ColumnName)
-                                    && (p.ShowFields.Contains("*") || p.ShowFields.Contains(b.ColumnName))
+                                    && (p.ShowFields.Contains("*") || p.ShowFields.Contains(b.ColumnName) || p.ShowFields.Length == 0)
 
                                 ).Select(c => new string[] { c.ColumnName, a[c.ColumnName].ToString() })
 
