@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<dynamic>" %>
+<script runat="server">
 
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
 <a href="/Home/English/">English</a>
 <a href="/Home/Japanese/">Japanese</a>
 
